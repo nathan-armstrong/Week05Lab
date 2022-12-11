@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 public class AccountService {
     ArrayList<String> users = new ArrayList<>(); 
-    private String username1= "abe";
-    private String username2 = "barb";
+    private String username1= "cprg352+admin@gmail.com";
+    private String username2 = "cprg352+admin2@gmail.com";
     private String password = "password";
     private boolean isValid = false;
 
