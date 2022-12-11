@@ -22,7 +22,7 @@
             Last Name: <input type="text" name="username" value="${lastName}"> <br>
             Email: <input type="text" name="username" value="${newEmail}"> <br>
             Password: <input type="text" name="password" value="${newPassword}"> <br>        
-            <input type="submit" value="NewAcc">
+            <input type="submit" value="Create Account">
         </form>
         
        
