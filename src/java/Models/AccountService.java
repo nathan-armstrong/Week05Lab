@@ -42,7 +42,7 @@ public class AccountService {
     }
     
     public boolean login(String username,String password){
-        if ( (this.password.equals(password)) && (this.username1.equals(username) || this.username2.equals(username)|| this.username3.equals(username)|| this.username4.equals(username))){
+        if ( (this.password.equals(password)) && ((this.username1.equals(username) || this.username2.equals(username)|| this.username3.equals(username)|| this.username4.equals(username)))){
             isValid = true;
         }else {
             isValid = false;

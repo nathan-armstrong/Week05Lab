@@ -18,10 +18,11 @@
         <br>
         <h2>Create an Account</h2>
         <form action="login" method="post">
-            Username: <input type="text" name="username" value="${newUser}"> <br>
+            First Name: <input type="text" name="username" value="${firstName}"> <br>
+            Last Name: <input type="text" name="username" value="${lastName}"> <br>
             Email: <input type="text" name="username" value="${newEmail}"> <br>
             Password: <input type="text" name="password" value="${newPassword}"> <br>        
-            <input type="submit" value="Log in">
+            <input type="submit" value="NewAcc">
         </form>
         
        
