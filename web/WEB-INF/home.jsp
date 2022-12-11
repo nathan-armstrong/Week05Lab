@@ -8,6 +8,7 @@
     <body>
         <h1>Home Page</h1>
         <h2>Hello ${username}</h2>
+        <h2>Modify Account</h2>
         <a href="login?logout" name="logout" value="logout"> Log out</a>
     </body>
 </html>

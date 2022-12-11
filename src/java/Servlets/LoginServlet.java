@@ -46,6 +46,10 @@ public class LoginServlet extends HttpServlet {
         HttpSession session = request.getSession();
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+        String newEmail = request.getParameter("newEmail");
+        String newPass = request.getParameter("newPassword");
+        
+        // Login
 
         if (username == null || password == null || username.equals("") || password.equals("")) {
 
@@ -74,6 +78,27 @@ public class LoginServlet extends HttpServlet {
         getServletContext()
                 .getRequestDispatcher("/WEB-INF/login.jsp")
                 .forward(request, response);
+        
+        // Create Account
+        
+        /*
+        if (newEmail == null || newPass == null || newEmail.equals("") || newPass.equals("")) {
+
+            message = "Username and password cannot be empty.";
+
+        } else {
+            AccountService user = new AccountService();
+            validUser = user.login(username, password);
+            if(validUser){
+                message = "Username already exists";
+            }
+            else{
+                //AccountService newAcc = new AccountService();
+                //validUser = newAcc.login(newEmail, newPass);
+                //message = "Your account was created";
+            }
+        }
+        */
     }
 
 }
